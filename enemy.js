@@ -1,8 +1,8 @@
 import {
   checkEnemyAttackCollision,
   handlePlayerDamage,
-} from "/combat.js";
-import { Player } from "/player.js";
+} from "./combat.js";
+import { Player } from "./player.js";
 
 export class Enemy {
   constructor(x, y, width, height, speed, size, damage, attackRange, imgSrc) {
