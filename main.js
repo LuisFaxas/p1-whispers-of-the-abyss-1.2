@@ -1,11 +1,11 @@
-import { setupInputListeners, isKeyPressed } from "./input.js";
-import { Player } from "./player.js";
-import { Enemy } from "./enemy.js";
+import { setupInputListeners, isKeyPressed } from "input.js";
+import { Player } from "player.js";
+import { Enemy } from "enemy.js";
 import {
   characters,
   renderCharacterSelector,
   handleCharacterSelection,
-} from "./characterSelector.js";
+} from "characterSelector.js";
 
 let canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
@@ -31,7 +31,7 @@ function preloadImages(imagePaths) {
 }
 
 let titleImage = new Image();
-titleImage.src = "./titleScreen.png";
+titleImage.src = "titleScreen.png";
 
 //RENDER TITLE SCREEN FUNCTION
 function renderTitleScreen(ctx, gameWidth, gameHeight, titleImg) {
@@ -48,7 +48,7 @@ function renderCharacterSelectorScreen(ctx) {
 //RENDER WIN SCREEN FUNCTION
 function renderWinScreen(ctx, gameWidth, gameHeight) {
   const winImage = new Image()
-  winImage.src = "./youEscaped.jpg"
+  winImage.src = "youEscaped.jpg"
 
   ctx.drawImage(winImage, 0, 0, gameWidth, gameHeight); 
 
@@ -62,7 +62,7 @@ function renderWinScreen(ctx, gameWidth, gameHeight) {
 function renderLoseScreen(ctx, gameWidth, gameHeight) {
 
   const loseImage = new Image()
-  loseImage.src = './YOUDIED.gif'
+  loseImage.src = 'YOUDIED.gif'
 
   ctx.drawImage(loseImage, 0, 0, gameWidth, gameHeight); 
 
@@ -80,7 +80,7 @@ function startGame(character) {
   backgroundImage.onload = () => {
     canvas.style.backgroundImage = `url(${backgroundImage.src})`
   };
-  backgroundImage.src = './1000_F_489114227_4piH63TD1SsMlOgwH8kr88LirtrueZsc.jpg'
+  backgroundImage.src = '1000_F_489114227_4piH63TD1SsMlOgwH8kr88LirtrueZsc.jpg'
 
   player = new Player(
     gameWidth / 2,
@@ -111,8 +111,8 @@ window.onload = () => {
   setupInputListeners();
   setupEnterKeyListener();
 
-  const playerImagePath = "./ironKnight.png";
-  const enemyImage = "./Skelleton.png";
+  const playerImagePath = "ironKnight.png";
+  const enemyImage = "Skelleton.png";
 
   preloadImages([enemyImage, titleImage.src])
     .then(() => {

@@ -6,9 +6,9 @@ export const characters = [
     health: 100,
     speed: 2,
     selected: false,
-    imagePath: "./barbarianSprite.png",
+    imagePath: "barbarianSprite.png",
     characterImage:
-      "./bloodyBarbarian1.png",
+      "bloodyBarbarian1.png",
   },
   {
     chName: "Cursed Knght",
@@ -17,9 +17,9 @@ export const characters = [
     health: 150,
     speed: 5,
     selected: false,
-    imagePath: "./iron1.png",
+    imagePath: "iron1.png",
     characterImage:
-      "./CharSelector/ironKnight1.png",
+      "CharSelector/ironKnight1.png",
   },
   {
     chName: "Cursed Soldier",
@@ -28,9 +28,9 @@ export const characters = [
     health: 200,
     speed: 7,
     selected: false,
-    imagePath: "./cursedSoldierSprite.png",
+    imagePath: "cursedSoldierSprite.png",
     characterImage:
-      "./cursedSoldier1.png",
+      "cursedSoldier1.png",
   },
 ];
 

@@ -1,5 +1,5 @@
-import { checkPlayerAttackCollision, handleEnemyDamage } from "src/modules/combat.js";
-import { isKeyPressed, isAttackKeyPressed } from "src/modules/input.js";
+import { checkPlayerAttackCollision, handleEnemyDamage } from "combat.js";
+import { isKeyPressed, isAttackKeyPressed } from "input.js";
 
 
 class Player {
