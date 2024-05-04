@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* .canvas-container {
+  margin: auto;
+  background-image: url('../Resources/Images/Game/BodyBackground.png');
+  background-position: top;
+  background-size: cover;
+  border: 10px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+} */
+
+canvas {
+  display: block;
+  margin: 20px auto 0;
+  background-color: lightgray;
+  border: 1px solid black;
+  /* background-image: url("../Resources/Images/Game/ai/17080192564753rjt1u2s.png"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#game-over {
+  visibility: hidden;
+  height: 0;
+  position: fixed;
+  color: white
+
+}
