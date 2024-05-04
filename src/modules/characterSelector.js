@@ -6,9 +6,9 @@ export const characters = [
     health: 100,
     speed: 2,
     selected: false,
-    imagePath: "../../Resources/Sprites/Custom/barbarian/barbarianSprite.png",
+    imagePath: "./Resources/Sprites/Custom/barbarian/barbarianSprite.png",
     characterImage:
-      "../../Resources/CharSelector/bloodyBarbarian1.png",
+      "./Resources/CharSelector/bloodyBarbarian1.png",
   },
   {
     chName: "Cursed Knght",
@@ -17,9 +17,9 @@ export const characters = [
     health: 150,
     speed: 5,
     selected: false,
-    imagePath: "../../Resources/Sprites/Custom/IronKnight/iron1.png",
+    imagePath: "./Resources/Sprites/Custom/IronKnight/iron1.png",
     characterImage:
-      "../../Resources/CharSelector/ironKnight1.png",
+      "./Resources/CharSelector/ironKnight1.png",
   },
   {
     chName: "Cursed Soldier",
@@ -28,9 +28,9 @@ export const characters = [
     health: 200,
     speed: 7,
     selected: false,
-    imagePath: "../../Resources/Sprites/Custom/Soldier/cursedSoldierSprite.png",
+    imagePath: "./Resources/Sprites/Custom/Soldier/cursedSoldierSprite.png",
     characterImage:
-      "../../Resources/CharSelector/cursedSoldier1.png",
+      "./Resources/CharSelector/cursedSoldier1.png",
   },
 ];
 

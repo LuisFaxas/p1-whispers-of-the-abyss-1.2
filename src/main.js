@@ -31,7 +31,7 @@ function preloadImages(imagePaths) {
 }
 
 let titleImage = new Image();
-titleImage.src = "../Resources/Images/GameStates/titleScreen.png";
+titleImage.src = "./Resources/Images/GameStates/titleScreen.png";
 
 //RENDER TITLE SCREEN FUNCTION
 function renderTitleScreen(ctx, gameWidth, gameHeight, titleImg) {
@@ -48,7 +48,7 @@ function renderCharacterSelectorScreen(ctx) {
 //RENDER WIN SCREEN FUNCTION
 function renderWinScreen(ctx, gameWidth, gameHeight) {
   const winImage = new Image()
-  winImage.src = "../Resources/Images/GameStates/youEscaped.jpg"
+  winImage.src = "./Resources/Images/GameStates/youEscaped.jpg"
 
   ctx.drawImage(winImage, 0, 0, gameWidth, gameHeight); 
 
@@ -62,7 +62,7 @@ function renderWinScreen(ctx, gameWidth, gameHeight) {
 function renderLoseScreen(ctx, gameWidth, gameHeight) {
 
   const loseImage = new Image()
-  loseImage.src = '../Resources/Images/GameStates/YOUDIED.gif'
+  loseImage.src = './Resources/Images/GameStates/YOUDIED.gif'
 
   ctx.drawImage(loseImage, 0, 0, gameWidth, gameHeight); 
 
@@ -80,7 +80,7 @@ function startGame(character) {
   backgroundImage.onload = () => {
     canvas.style.backgroundImage = `url(${backgroundImage.src})`
   };
-  backgroundImage.src = '../Resources/Images/Terrain/1000_F_489114227_4piH63TD1SsMlOgwH8kr88LirtrueZsc.jpg'
+  backgroundImage.src = './Resources/Images/Terrain/1000_F_489114227_4piH63TD1SsMlOgwH8kr88LirtrueZsc.jpg'
 
   player = new Player(
     gameWidth / 2,
@@ -111,8 +111,8 @@ window.onload = () => {
   setupInputListeners();
   setupEnterKeyListener();
 
-  const playerImagePath = "../../Resources/Sprites/Custom/IronKnight/ironKnight.png";
-  const enemyImage = "../Resources/Sprites/Enemies/Skelleton.png";
+  const playerImagePath = "./Resources/Sprites/Custom/IronKnight/ironKnight.png";
+  const enemyImage = "./Resources/Sprites/Enemies/Skelleton.png";
 
   preloadImages([enemyImage, titleImage.src])
     .then(() => {
